@@ -1,0 +1,26 @@
+Category
+    Info: A category of jewelry. Jewelry belong to categories, like bracelets,
+    earrings, and necklaces.
+    Icons: small icons to identify the category visually, and perhaps attach it
+    to a jewelry that belongs to this category.
+    Name
+    Date & Time of addition
+Jewelry
+    Name
+    Category
+    Date & Time of addition
+    Price
+    Availability
+    Metal Type: information about the type of metal used.
+    Jewel Info: information about the number, and type of jewels the item
+    contains.
+    Main Picture (Small & Large)
+    Additional Images (Small & Large): Optional
+Accounts
+    First name
+    Last name
+    Username (optional)
+    Date of birth
+    Email address
+    Password
+    Delivery Address

@@ -1,0 +1,41 @@
+Jewelry Web App
+    Accounts
+        Sign Up
+            User provides email address, phone number (optional),
+            full name, and a password, then performs email verification
+        Sign In
+        Sign Out
+        View Own Account
+        Delete Account
+        Edit Account
+        Reset Password
+    Admin
+        List Accounts
+            View a list of all the user accounts
+        Inspect Account
+            View in detail the accounts belonging to other users
+        De-activate Account
+    Jewelry
+        General (Searching)
+            List Jewelry
+                Provides a list of jewelry of a certain category to look at
+            Inspect Jewelry
+                View a piece of jewelry in detail
+        Client (Shopping)
+            Add to Cart
+                While viewing jewelry
+            Remove from Cart
+                While viewing the jewelry in cart
+            Increase Amount in Cart
+                While viewing the jewelry in cart
+            Decrease Amount in Cart
+                While viewing the jewelry in cart
+            Confirm Order
+                While viewing the jewelry in cart
+        Admin (Content Management)
+            Add Jewelry
+            Remove Jewelry
+            Edit Jewelry
+            Add Category
+            Remove Category
+            Edit Category

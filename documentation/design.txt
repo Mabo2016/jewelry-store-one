@@ -1,0 +1,39 @@
+Sunday, 16-09-2018, 17:34
+Hamade
+Software design document. What Django models, templates, views, forms, model
+forms, and such are to be created. Also, what each will contain and the tasks
+it will be responsible for. Also, document other decisions like hacks, fixes,
+configurations, and whatever else that does not normally fit in with the other
+categories.
+
+Requirements:
+    View Own Account
+    Reset Password
+
+Design:
+    View Own Account
+        Data
+            First name - CharField
+            Last name - CharField
+            Email address - EmailField
+            Phone number - CharField
+            Delivery address - CharField
+                House/Block number
+                Street
+                District/Zone
+                // City and country assumed to be Dubai, UAE.
+        Templates (views)
+            user_profile.html
+        Views (controllers)
+            user_profile_view.py
+        Forms
+            user_profile_form.py
+
+Plan:
+    View Own Account
+        1. Modify the model to have phone number, and physical address.
+        2. Modify signup process to account for phone number,
+        and the delivery address.
+        3. Sign in and sign out stay the same.
+        4. user_profile_view.py & user_profile_form.py.
+        5. user_profile.html

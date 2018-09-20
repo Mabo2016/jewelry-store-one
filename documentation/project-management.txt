@@ -1,0 +1,27 @@
+Wednesday, 12-09-2018, 11:10
+    Planned Completion Date: Wednesday, 12-09-2018
+        * Setup project
+        * Initial documentation - requirements (data, ui, and functional), and
+        project management.
+        * Implement the Account System:
+            i. Sign In
+            ii. Sign Out
+            iii. Sign Up
+            iv. View Own Account
+            v. Some basic home page.
+
+    List of Tasks
+        1. Account Component
+            Sign In - DONE: Sunday, 16-09-2018
+            Sign Out - DONE: Sunday, 16-09-2018
+            Sign Up - DONE: Sunday, 16-09-2018
+            View Own Account - DONE: Monday, 18-09-2018, 00:25
+            Reset Password - DONE: Wednesday, 20-09-2018, 11:59
+        2. Jewelry Component
+            List Jewelry
+            Inspect Jewelry
+            Filter Jewelry
+        3. Admin Component
+        4. Product Ordering Component
+        5. GUI Styling
+        6. Deployment & Production

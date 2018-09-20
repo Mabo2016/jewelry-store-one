@@ -1,0 +1,23 @@
+Thursday, 13-09-2018, 14:44
+    1. Tried to implement user sign up with email validation.
+        P: account_activation_sent. Django cannot find it, but the tutorial
+        demanded that it be referenced in the app's urls.py.
+        PS: Apparently, account_activation_sent is a custom view the tutorial
+        implied that I had to code. The function view does nothing but return
+        a render with request and a link to the email_activation_sent template.
+        FE: The index page of the jewelryapp site does not load. Safari keeps,
+        "loading it". Perhaps lacking internet connection is an issue or some
+        other mistake was made.
+Tuesday, 18-09-2018, 17:25
+    2. Sign up user with a profile and email validation
+        P: Did not know how to update the user's profile details when created.
+        S: Followed the solution from:
+            "How to Create User Sign Up View by Vitor Freitas"
+        Should use one form only. For both the user and profile. Also,
+        the meta for the SignUpForm class should be User. The profile's
+        attributes are updated after the user is created with save() in the
+        signup view and after the user object is reloaded with
+        "refresh_from_db". This is in order to obtain the profile object,
+        which was newly created.
+        The attributes of the profile class can be displayed in the form by
+        listing them explicitly in the signup form.

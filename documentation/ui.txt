@@ -1,0 +1,30 @@
+Pages
+    --Main--
+    Home Page ???
+        // Some marketing messages that convey the values or story of the
+        // business.
+        // Display some special product offerings or promotions. Maybe,
+        // handpicked ones.
+    Landing Page ???
+    Jewelry - Main Page?
+    // Maybe make it just one page, where the user can filter what items to
+    // look at.
+        Assorted
+        Necklaces
+        Bracelets
+        Earrings
+        Rings
+        Brooches
+    // If there are issues with opening multiple tabs, then have several pages,
+    one for each category or type of jewelry.
+    --Account--
+    Sign In
+    Sign Up
+    Shopping Cart
+    Profile/Account
+    --Meta--
+    About Us
+        // Typical
+    Contact/Find Us
+    // Some email addresses, phone numbers, addresses and a google map for
+    // directions.
