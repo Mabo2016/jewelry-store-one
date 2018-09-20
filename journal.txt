@@ -1,3 +1,6 @@
 Thursday, 20-09-2018, 16:37 - xx:xx
-    1. Learning git from "Pro Git" and committing the jewelry store project to
-    version control with git.
+    16:37 - 17:43
+        1. Learning git from "Pro Git".
+        2. Initialized and commited the jewelry store directory with git.
+    17:44 - xx:xx
+        1. Trying to make user registration as a separate app.

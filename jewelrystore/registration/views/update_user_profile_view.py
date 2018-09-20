@@ -2,8 +2,8 @@ from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.forms.models import model_to_dict
 
-from jewelryapp.forms import ProfileDetailModelForm, UserDetailModelForm
-from jewelryapp.models import Profile
+from registration.forms import ProfileDetailModelForm, UserDetailModelForm
+from registration.models import Profile
 
 def update_user_profile(request, pk):
     """Updates the profile of a user by the user himself or herself"""

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "jewelryapp.apps.JewelryappConfig",
+    "registration.apps.RegistrationConfig",
     "django_countries",
 ]
 
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'jewelrystore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['./templates',],
+        'DIRS': ['./registration/templates', './jewelryapp'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

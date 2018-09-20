@@ -7,8 +7,8 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.utils.http import urlsafe_base64_encode
 from django.template.loader import render_to_string
 
-from jewelryapp.forms import SignUpForm
-from jewelryapp.tokens import account_activation_token
+from registration.forms import SignUpForm
+from registration.tokens import account_activation_token
 
 # Creates a new user. Only customer users are created. Admin or staff users, are
 # created by another admin or super user through the admin site or the admin
