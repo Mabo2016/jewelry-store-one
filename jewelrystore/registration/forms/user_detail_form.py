@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from jewelryapp.models import User
+from registration.models import User
 
 class UserDetailModelForm(ModelForm):
     class Meta:

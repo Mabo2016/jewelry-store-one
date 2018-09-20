@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
-from jewelryapp.tokens import account_activation_token
+
+from registration.tokens import account_activation_token
 
 # Activates accounts for users that have completed email-verification for
 # sign up. It also adds the user to the group of customers.
