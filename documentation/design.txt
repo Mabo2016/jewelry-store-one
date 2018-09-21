@@ -37,3 +37,91 @@ Plan:
         3. Sign in and sign out stay the same.
         4. user_profile_view.py & user_profile_form.py.
         5. user_profile.html
+
+
+Jewelry browsing and searching
+    1. Filtered content
+        Implement one page, jewelry-list, where all the jewelry are listed.
+        Allow the user to filter them, by category (e.g earrings or bracelets).
+        Or by something else, like date added, price, or some combination.
+    2. Fractioned content
+        Create several pages, one for each jewelry category, bracelets, rings,
+        earrings, and so on. And then allow filtering on each page for date
+        added, price, and such.
+
+    Pros:
+        Filtered
+            * Fewer pages
+            * Less coding
+            * Less navigation
+            * Allows combination of various jewelry
+            * Caters to users who are looking for very specific items, and for
+            those who aren't
+            *
+        Fractioned
+            * Clearly separated content
+            * Clearly communicates the content
+            * Perhaps easier with tabbing in a browser
+            * Allows category-specific code
+    Cons:
+        Filtered
+            * May cause trouble with tabbing in browsers
+            * May make the site seem simplistic
+            * May make the site seem lacking in content
+        Fractioned
+            * Extra code and files
+            * May be unnecessary
+            * If there are many categories the navigation bar and menu will be
+            cluttered with various pages to visit.
+            * Harder to extend or add content in the form of new categories.
+
+    Decision
+        Make it filtered. Then later on maybe implement a fractioned version
+        of the site.
+
+    Design:
+        Filter on category, date added, price, metal/texture
+        Categories:
+            Earrings, rings, bracelets, necklaces, brooches, tiaras
+        Metal/texture:
+            Rose gold, gold, platinum, silver
+
+    Code:
+        templates:
+            jewelry_list.html
+            jewelry_detail.html
+        views:
+            jewelry_view.py
+        models:
+            jewelry
+
+        data:
+            jewelry
+                name:           char field
+                date_added:     date_time
+                price:          decimal
+                metal_used:     char field, list
+                thumbnail:      image
+                detail_images:  list of images
+        gui:
+            jewelry_list.html
+                * Paginated list of jewelry items filtered by the user.
+                * A filters bar to filter jewelry based on date added, price,
+                category, and metal used
+                * A main content area where rows of 5 columns are shown, each
+                cell having one jewelry shown.
+                * Each cell shows a thumbnail of the item, with its name, and
+                price.
+                * Pagination by 50 items
+                * View in detail possible by clicking on an item.
+            jewelry_detail.html
+                All the details of the item shown on screen, except the
+                thumbnail.
+                Images at the top.
+        views:
+            list_jewelry
+                takes in filtering data and returns a list of items according
+                to the filters and pagination.
+            detail_jewelry
+                Just show the details of the item, except the thumbnail.
+            
