@@ -4,6 +4,21 @@ Thursday, 20-09-2018, 16:37 - 22:20
         2. Initialized and committed the jewelry store directory with git.
     17:44 - 22:20
         1. Completed making a separate app for user registration.
-Friday, 21-09-2018, 13:45 - xx:xx
-    13:45 - xx:xx
-        1. Jewelry browsing and searching
+Friday, 21-09-2018, 13:45 - 17:00
+    13:45 - 17:00
+        1. Jewelry browsing and searching. Did not finish.
+        2. Needed to install pillow for imagefield for models but terminal
+        failed. Apparently the internet connection was not good enough, as it
+        kept timing out.
+        3. The model jewelry is mostly done. Some of the design is done, but
+        the rest is not done. The views, and templates.
+Saturday, 22-09-2018, unknown, but less than 2 hours of work.
+    Unknown, < 2 hours of work
+        1. Installed the pillow library for imagefield functionality for
+        models. Downloaded it with the browser, Safari, which worked far
+        better than terminal for whatever reason.
+        2. Did not test it, only installed it.
+Sunday, 23-09-2018, 00:40 - xx:xx
+    00:40 - xx:xx
+        1. Jewelry browsing and searching.
+        2. Jewelry model.

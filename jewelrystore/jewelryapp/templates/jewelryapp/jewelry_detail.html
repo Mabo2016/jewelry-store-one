@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>{{ jewelry.title }}</h1>
+
+    <p>
+        Price: {{jewelry.price}}
+    </p>
+
+    <p>
+        Gemstones: {{ jewelry.get_gemstones_used_display }}
+    </p>
+
+    <p>
+        Metals: {{jewelry.get_metallic_finish_display}}
+    </p>
+
+    <p>
+        Availability: {{jewelry.get_availability_display}}
+    </p>
+
+    <p>
+        <img src="{{ jewelry.detail_image.url }}" alt="{{jewelry.title}}"
+        width="360" height = "240">
+    </p>
+{% endblock %}
