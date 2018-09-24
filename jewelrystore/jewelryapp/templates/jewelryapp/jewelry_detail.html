@@ -4,7 +4,7 @@
     <h1>{{ jewelry.title }}</h1>
 
     <p>
-        Price: {{jewelry.price}}
+        Type: {{ jewelry.get_category_display }}
     </p>
 
     <p>
@@ -17,6 +17,10 @@
 
     <p>
         Availability: {{jewelry.get_availability_display}}
+    </p>
+
+    <p>
+        Price: {{jewelry.price}}
     </p>
 
     <p>

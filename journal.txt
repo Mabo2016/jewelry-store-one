@@ -7,18 +7,45 @@ Thursday, 20-09-2018, 16:37 - 22:20
 Friday, 21-09-2018, 13:45 - 17:00
     13:45 - 17:00
         1. Jewelry browsing and searching. Did not finish.
-        2. Needed to install pillow for imagefield for models but terminal
+        2. Needed to install pillow for image field for models but terminal
         failed. Apparently the internet connection was not good enough, as it
         kept timing out.
         3. The model jewelry is mostly done. Some of the design is done, but
         the rest is not done. The views, and templates.
 Saturday, 22-09-2018, unknown, but less than 2 hours of work.
     Unknown, < 2 hours of work
-        1. Installed the pillow library for imagefield functionality for
+        1. Installed the pillow library for image field functionality for
         models. Downloaded it with the browser, Safari, which worked far
         better than terminal for whatever reason.
         2. Did not test it, only installed it.
-Sunday, 23-09-2018, 00:40 - xx:xx
-    00:40 - xx:xx
-        1. Jewelry browsing and searching.
-        2. Jewelry model.
+Sunday, 23-09-2018, 00:40 - 20:00
+    00:40 - 03:06
+        1. Added jewelry browsing, in list and detail.
+        2. No filtering yet.
+        3. Learned how to use Pillow's image field.
+        4. Need to learn about user's uploading and serving of images for
+        production environments.
+    18:32 - 20:00
+        1. Jewelry browsing. Results can be filtered but by typing text in,
+        not by pressing buttons. More work needed.
+        2. Used package called django_filters but still don't understand it.
+Monday, 24-09-2018, 16:56 - 20:00
+    16:56 - 20:00 CONTINUED TOMORROW at 02:00 - 03:47
+        1. Work on filtering results.
+        2. Failed to implement a working one.
+        3. Best result was with links that lead to the same template and view
+        but the function view is given different params with urls dispatcher.
+        However, the filtering, with django-filters, is ruined and the
+        filters are forgotten since a "new page" is displayed.
+        4. Will have to look into other django projects, and read more
+        documentation especially about models and the meta ordering attribute.
+Tuesday, 25-09-2018, 02:00 - 03:47
+    02:00 - 03:47
+        1. Work on filtering results.
+        2. Failed to implement a working one.
+        3. Best result was with links that lead to the same template and view
+        but the function view is given different params with urls dispatcher.
+        However, the filtering, with django-filters, is ruined and the
+        filters are forgotten since a "new page" is displayed.
+        4. Will have to look into other django projects, and read more
+        documentation especially about models and the meta ordering attribute.

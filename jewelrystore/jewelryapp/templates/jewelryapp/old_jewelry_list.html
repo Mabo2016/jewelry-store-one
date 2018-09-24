@@ -1,0 +1,20 @@
+
+
+{% if jewelry_list %}
+    <ul>
+    {% for jewelry in jewelry_list %}
+        <li>
+            <a href="{{ jewelry.get_absolute_url }}">
+                <p>
+                    <img src="{{ jewelry.thumbnail.url }}"
+                    alt="Small image of {{jewelry.title}}"
+                    width="120" height = "80">
+                </p>
+                <p>{{ jewelry.title }}</p>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Jewelry not found</p>
+{% endif %}

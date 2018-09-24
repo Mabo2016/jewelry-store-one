@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "jewelryapp.apps.JewelryappConfig",
-    "registration.apps.RegistrationConfig",
-    "django_countries",
+    'jewelryapp.apps.JewelryappConfig',
+    'registration.apps.RegistrationConfig',
+    'django_countries',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

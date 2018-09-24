@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+<!-- Needed for ordering lists within the browser -->
+{% load list_ordering_templatetags %}
+
+{% block content %}
+    <h1>Necklaces</h1>
+
+    <p>
+        <a href="{% url 'necklaces-by-price'%}">Price</a>
+        <a href="{% url 'necklaces-by-date'%}">Date</a>
+    </p>
+
+    {% for necklace in queryset %}
+        <li>
+            <a href="{{ necklace.get_absolute_url }}">
+                <p>
+                    <img src="{{ necklace.thumbnail.url }}"
+                    alt="Small image of {{necklace.title}}"
+                    width="120" height = "80">
+                </p>
+                <p>{{ necklace.title }}</p>
+            </a>
+        </li>
+    {% endfor %}
+{% endblock %}

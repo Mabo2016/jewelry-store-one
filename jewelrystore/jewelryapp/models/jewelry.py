@@ -14,13 +14,28 @@ class Jewelry(models.Model):
         blank=True,
         help_text="Required. E.g. Stainless Steel Mixed Color Pendant")
 
+    CATEGORIES = (
+        ("e", "Earring"),
+        ("r", "Ring"),
+        ("n", "Necklace"),
+        ("p", "Pendant"),
+        ("b", "Braces"),
+    )
+
+    category = models.CharField(
+        max_length=1,
+        choices=CATEGORIES,
+        blank=True,
+        default='r',
+        help_text='The type of jewelry this belongs to'
+    )
+
     date_time_added = models.DateField(auto_now = True)
 
     # AED's, UAE Dirhams
     price = models.DecimalField(max_digits=8, decimal_places=2)
 
     GEMSTONES = (
-        ("n", "Not set"),
         ("r", "Ruby"),
         ("d", "Diamond"),
         ("s", "Saphire"),
@@ -37,13 +52,11 @@ class Jewelry(models.Model):
         max_length=1,
         choices=GEMSTONES,
         blank=True,
-        default='n',
+        default='r',
         help_text='Gemstones, like ruby or saphire, used in this item'
     )
 
     METALS = (
-        ("n", "Not set"),
-        ("n", "Common"),
         ("t", "Stainless Steel"),
         ("s", "Silver"),
         ("g", "Gold"),
@@ -60,7 +73,7 @@ class Jewelry(models.Model):
         max_length=1,
         choices=METALS,
         blank=True,
-        default='n',
+        default='t',
         help_text='Metal the jewelry is made from'
     )
 
