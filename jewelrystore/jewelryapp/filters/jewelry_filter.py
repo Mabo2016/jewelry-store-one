@@ -9,7 +9,7 @@ class JewelryFilter(django_filters.FilterSet):
     class Meta:
         model = Jewelry
         fields = {
-            'title': ['exact'],
+            'title': ['contains'],
             'category': ['exact'],
             'gemstones_used': ['exact'],
             'metallic_finish': ['exact'],
