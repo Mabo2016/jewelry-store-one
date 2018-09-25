@@ -39,18 +39,20 @@ Monday, 24-09-2018, 16:56 - 20:00
         filters are forgotten since a "new page" is displayed.
         4. Will have to look into other django projects, and read more
         documentation especially about models and the meta ordering attribute.
-Tuesday, 25-09-2018, 02:00 - 03:47
+Tuesday, 25-09-2018, 02:00 - 21:33
     02:00 - 03:47
-        1. Work on filtering results.
-        2. Failed to implement a working one.
+        1. Work on filtering results
+        2. Failed to implement a working one
         3. Best result was with links that lead to the same template and view
-        but the function view is given different params with urls dispatcher.
+        but the function view is given different params with urls dispatcher
         However, the filtering, with django-filters, is ruined and the
-        filters are forgotten since a "new page" is displayed.
+        filters are forgotten since a "new page" is displayed
         4. Will have to look into other django projects, and read more
-        documentation especially about models and the meta ordering attribute.
-    20:47:00 - xx:xx
-        1. Suspend work on sorting results by the user.
-        2. Test the jewelry app some more and then merge it to the master.
-        3. Figure out how to create a remote repository for the project.
-        
+        documentation especially about models and the meta ordering attribute
+    20:47:00 - 21:33
+        1. Suspended work on sorting results by the user
+        2. Tested the jewelry app some more and then merged it to the master
+        3. Figured out how to create a remote repository for the project
+Wednesday, 26-09-2018, 01:36 - xx:xx
+    01:36 - xx:xx
+        1. Work on admin component

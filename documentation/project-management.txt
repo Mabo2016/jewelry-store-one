@@ -18,9 +18,10 @@ Wednesday, 12-09-2018, 11:10
             View Own Account - DONE: Monday, 18-09-2018, 00:25
             Reset Password - DONE: Wednesday, 20-09-2018, 11:59
         2. Jewelry Component
-            List Jewelry
-            Inspect Jewelry
-            Filter Jewelry
+            List Jewelry - DONE: Tuesday, 25-09-2018, 21:33
+            Inspect Jewelry - DONE: Tuesday, 26-09-2018, 21:33
+            Filter Jewelry - DONE: Tuesday, 26-09-2018, 21:33
+            Sorting Jewelry - POSTPONED
         3. Admin Component
         4. Product Ordering Component
         5. GUI Styling
