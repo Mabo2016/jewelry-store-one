@@ -49,3 +49,8 @@ Tuesday, 25-09-2018, 02:00 - 03:47
         filters are forgotten since a "new page" is displayed.
         4. Will have to look into other django projects, and read more
         documentation especially about models and the meta ordering attribute.
+    20:47:00 - xx:xx
+        1. Suspend work on sorting results by the user.
+        2. Test the jewelry app some more and then merge it to the master.
+        3. Figure out how to create a remote repository for the project.
+        
