@@ -22,7 +22,15 @@ Wednesday, 12-09-2018, 11:10
             Inspect Jewelry - DONE: Tuesday, 26-09-2018, 21:33
             Filter Jewelry - DONE: Tuesday, 26-09-2018, 21:33
             Sorting Jewelry - POSTPONED
-        3. Admin Component
-        4. Product Ordering Component
+        3. Product Ordering Component
+            Add to Cart
+            View My Cart
+            Remove from Cart
+            Alter Quantity in Cart
+            Confirm Order
+            Receive Orders
+            View List of Orders
+            View Order in Detail
+        4. Admin Component
         5. GUI Styling
         6. Deployment & Production

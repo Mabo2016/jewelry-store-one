@@ -39,3 +39,14 @@ Jewelry Web App
             Add Category
             Remove Category
             Edit Category
+    Carts
+        Show list of individual items and quantity added of each
+        Show individual price for each item
+        Show total price for all items of the same type
+        Show total price for all items in the cart
+        Show estimated time of arrival for items when ordered.
+            Current date + 1 week
+        Prompt for order confirmation
+        When user clicks on confirm, prompt the user to be sure if he/she
+        wants to place the order.
+        Inform the user of the order's details before placing it.

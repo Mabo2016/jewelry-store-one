@@ -124,4 +124,43 @@ Jewelry browsing and searching
                 to the filters and pagination.
             detail_jewelry
                 Just show the details of the item, except the thumbnail.
-            
+
+    My Cart
+        Need a my cart page for the user
+        accessible when logged in only
+        An add to cart button should appear or look active if and when the user
+        is logged in browsing jewelry
+        My cart page should allow removal of items, and the alteration of the
+        quantity of the items in the cart, without addition of new types of
+        items. The latter is done in the jewelry page.
+        Show the total price for all items in the cart.
+        Show the total quantity of items in the cart.
+        Show the price of each type of item in the cart.
+        Show the quantity added of each type of item in the cart.
+        Show the price x quantity of each type of item in the cart
+        Show that the delivery will take a week from the time the order was
+        placed.
+
+    Place Order
+        Place order button appears on the my cart page
+        Inactive if there are no items in the cart
+        Active if there is 1 or more items in the cart
+        If button pressed then ask for confirmation from the user
+        Also, if pressed, inform the user of how long the delivery will take,
+        and the total price
+
+    Design solutions:
+        A separate template for my cart "my_cart.html".
+        The page should show a table with all the user's items.
+            My Cart Table's Columns:
+                Item Name   Individual price    Quantity Added  Total Price
+                string      decimal             integer         decimal
+
+            A button that allows to alter the quantity added per type of
+            item should be placed near the table or in the table.
+            If not practical then this feature should be disallowed and the
+            user will have to alter the quantity from without the page.
+            Also, if not possible then the user should be allowed to
+            delete the entire row of the table.
+
+        
