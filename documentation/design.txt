@@ -163,4 +163,59 @@ Jewelry browsing and searching
             Also, if not possible then the user should be allowed to
             delete the entire row of the table.
 
-        
+    Models
+        Cart
+            User: 1-to-1
+
+        Order
+            User: fk
+            Jewelry: fk
+            Payment Method
+            Delivery Address
+    Views (controllers/delegates)
+        my_cart_view
+        order_placement_view
+    Templates (views)
+        order_placement.html
+        my_cart.html
+    forms
+        order_placement_form
+        my_cart_form???
+
+    User/Shopper always a cart object in db. When the shopper is logged in,
+    he/she can add items to it. The items stay in the cart object until the
+    shopper checks out (aka places and confirms an order) or until he/she
+    signs out, or until he/she disconnects from the site.
+    In such cases the cart is emptied.
+    If the user places an order then:
+        A new order object is created in the db for the user
+        Its contents will be transferred from the cart object
+        The cart object is cleared of all items
+        The user is prompted to input delivery details like address
+        The user is shown how long it takes for the delivery to happen
+        The user is prompted to confirm the order
+            If the shopper confirms it, then the order is updated with
+            the delivery address.
+            A confirmation of the order email is sent to the shopper's
+            email address
+            If the shopper rejects then the state is reverted to when the
+            order was placed but not confirmed.
+        The shopper is prompted to input/verify the email address
+        The shopper is prompted to cancel or confirm the order
+            If the shopper cancels the order it is deleted from the db,
+            and the cart stays deleted and nothing is saved.
+
+    Models
+        Cart
+            User: fk
+            Date-time created; date-time
+            // If is_ordered then delete this object
+            is_ordered: boolean
+    When user requests an item to be added to cart
+        If cart does not exist for this user then
+            Create a new cart for this user
+        Create a new cart item
+            Add a reference to the jewelry item in the cart item
+            OR duplicate the jewelry item's details in the cart item
+        added it to the cart
+            Add a fk to the cart item linking it to the cart

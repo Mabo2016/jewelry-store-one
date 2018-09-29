@@ -1,0 +1,23 @@
+
+
+<form action="{% url 'add_to_cart' pk=jewelry.pk %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">Add to Cart</button>
+</form>
+<p>
+    <a href='{% url 'add_to_cart' %}'>Add to Cart</a>
+</p>
+
+<form action="" method="post">
+    <input type="submit" value="Clear Cart">
+</form>
+
+
+def add_to_cart(request, pk):
+jewelry = get_object_or_404(Jewelry, pk=pk)
+new_cart_item = CartItem(
+    shopping_cart=request.user.shoppingcart,
+    jewelry_item=jewelry
+)
+new_cart_item.save()
+return render(request, 'jewelryapp/jewelry_detail.html')

@@ -53,6 +53,33 @@ Tuesday, 25-09-2018, 02:00 - 21:33
         1. Suspended work on sorting results by the user
         2. Tested the jewelry app some more and then merged it to the master
         3. Figured out how to create a remote repository for the project
-Wednesday, 26-09-2018, 01:36 - xx:xx
-    01:36 - xx:xx
-        1. Work on admin component
+Wednesday, 26-09-2018, 01:36 - unknown
+    01:36 - unknown
+        1. looked into implementing admin component.
+        2. Decided to implement a built-in admin component from scratch for
+        2nd tier staff and admins. Thus keeping the superuser side safer.
+        3. Also decided to do it after finishing the shopping cart and order
+        placement components.
+Thursday, 27-09-2018, 02:00? - 07:00?
+    02:00? - 07:00?
+        1. Worked on shopping cart functionality.
+        2. Created the models, templates, and views.
+        3. Need more work to complete them.
+        4. No add to cart functionality. And no cart editing functionality.
+        5. Also, the link to the shopping cart is currently not working.
+Friday, 28-09-2018, 06:12 - 23:08
+    * Worked for 2-3 hours only due to electricity shortage.
+    06:12 - 23:08
+        1. User has a shopping cart and can have cart items in shopping cart.
+        2. User can visit his shopping cart and the items will appear.
+        3. The items can only be added through the admin.
+        4. The shopping cart is created only by the admin.
+        5. Shopping cart creation and item addition functionality are missing.
+        6. The problems encountered were due to poor linking with the urlconf.
+Saturday, 29-09-2018, 01:04 - xx:xx
+    01:04 - 06:22
+        1. Add to shopping cart functionality done.
+        2. Creation of shopping cart for each user upon signup done.
+    21:28 - xx:xx
+        1. Clear the cart of its contents functionality.
+        2. Group items by type, and show quantity, and prices.

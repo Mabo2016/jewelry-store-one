@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>My Cart</h1>
+
+    <div style="margin-left:20px;margin-top:20px">
+        <h4>Items</h4>
+
+        {% if shoppingcart.cartitem_set.exists %}
+            {% for cartitem in shoppingcart.cartitem_set.all %}
+                <a href="{{cartitem.jewelry_item.get_absolute_url}}">
+                    <p>
+                        <img src="{{cartitem.jewelry_item.thumbnail.url}}"
+                        width="120" height = "80">
+                    </p>
+                    <p>
+                        {{cartitem.jewelry_item.title}} {{cartitem.jewelry_item.price}}
+                    </p>
+                </a>
+            {% endfor %}
+        {% else %}
+            <p>There are items in your cart.</p>
+        {% endif %}
+    </div>
+{% endblock %}

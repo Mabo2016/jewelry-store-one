@@ -26,6 +26,11 @@
                         {% if user.is_authenticated %}
                         <li><h3>User: {{ user.get_username }}</h3></li>
                         <li>
+                            <a href="{{ user.shoppingcart.get_absolute_url }}">
+                                My Cart
+                            </a>
+                        </li>
+                        <li>
                             <a href="{{user.profile.get_absolute_url}}">
                                 My Profile
                             </a>
