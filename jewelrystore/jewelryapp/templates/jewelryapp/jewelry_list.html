@@ -8,9 +8,7 @@
         {{ filter.form.as_p }}
         <input type="submit" />
     </form>
-
-    <!-- Don't put the sub-header inside the template tag body or it will be
-    inserted in the document several times-->
+    
     <h2>Results</h2>
     {% for obj in filter.qs %}
         <li>

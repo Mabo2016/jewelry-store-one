@@ -219,3 +219,19 @@ Jewelry browsing and searching
             OR duplicate the jewelry item's details in the cart item
         added it to the cart
             Add a fk to the cart item linking it to the cart
+
+    Cart
+        Cart Items : Jewelry Items
+
+    Order Placement
+        When placing orders
+            Prompt for confirmation
+            Create order object
+            Populate it with shopping cart items
+                Foreach cart item create an order item
+            Clear shopping cart
+            Send email to shopper with details of order.
+            Show the user the order.
+        Order object
+        order detail
+        order list

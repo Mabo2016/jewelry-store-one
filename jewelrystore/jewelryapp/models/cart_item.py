@@ -18,6 +18,10 @@ class CartItem(models.Model):
     # a cart item.
     jewelry_item = models.ForeignKey(Jewelry, on_delete=models.CASCADE, null=True, blank=True)
 
+    count = models.IntegerField(default=1, editable=False, help_text="The number of jewelry items of the same type added to the shopping cart")
+
+    total_price = models.DecimalField(default=0, max_digits=8, decimal_places=2, editable=False, help_text="The total price of this type of item. It's count multiplied by its unit price")
+
     def __str__(self):
         """Identifies the object"""
         return f"{self.shopping_cart.__str__()} {self.jewelry_item.__str__()} {self.id}"

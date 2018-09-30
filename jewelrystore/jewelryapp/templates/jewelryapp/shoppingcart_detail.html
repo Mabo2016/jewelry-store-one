@@ -2,24 +2,57 @@
 
 {% block content %}
     <h1>My Cart</h1>
-
-    <div style="margin-left:20px;margin-top:20px">
-        <h4>Items</h4>
-
-        {% if shoppingcart.cartitem_set.exists %}
+    {% if shoppingcart.cartitem_set.exists %}
+    <form action="{% url 'clear_cart' pk=shoppingcart.id %}" method="GET">
+        {% csrf_token %}
+        <button type="submit">Clear Cart</button>
+    </form>
+    <form action="{% url 'jewelry' %}" method="GET">
+        {% csrf_token %}
+        <button type="submit">Back to Shopping</button>
+    </form>
+    <form action="{% url 'place_order' %}" method="GET">
+        {% csrf_token %}
+        <button type="submit">Place Order</button>
+    </form>
+    <table>
+        <theader>
+            <tr>
+                <th>Quantity</th>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+            </tr>
+        </theader>
+        <tbody>
             {% for cartitem in shoppingcart.cartitem_set.all %}
-                <a href="{{cartitem.jewelry_item.get_absolute_url}}">
-                    <p>
-                        <img src="{{cartitem.jewelry_item.thumbnail.url}}"
-                        width="120" height = "80">
-                    </p>
-                    <p>
-                        {{cartitem.jewelry_item.title}} {{cartitem.jewelry_item.price}}
-                    </p>
+            <tr>
+                <td>{{ cartitem.count }}</td>
+                <td>
+                    <a href="{{ cartitem.jewelry_item.get_absolute_url }}">
+                    <img src="{{cartitem.jewelry_item.thumbnail.url}}"
+                    width="120" height = "80">
+                    </a>
+                </td>
+                <td>
+                <a href="{{ cartitem.jewelry_item.get_absolute_url }}">
+                    {{ cartitem.jewelry_item.title }}
                 </a>
+                </td>
+                <td>{{ cartitem.jewelry_item.price }}</td>
+                <td>{{ cartitem.total_price }}</td>
+            </tr>
             {% endfor %}
-        {% else %}
-            <p>There are items in your cart.</p>
-        {% endif %}
-    </div>
+        </tbody>
+        <tfooter>
+            <tr>
+                <th>Total</th>
+                <td>{{ shoppingcart.total_price }}</td>
+            </tr>
+        </tfooter>
+    </table>
+    {% else %}
+    <p>There are items in your cart.</p>
+    {% endif %}
 {% endblock %}

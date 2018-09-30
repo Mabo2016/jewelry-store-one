@@ -9,6 +9,14 @@ class ShoppingCart(models.Model):
 
     shopper = models.OneToOneField(User, on_delete=models.CASCADE)
 
+    total_price = models.DecimalField(
+        default=0,
+        max_digits=12,
+        decimal_places=2,
+        editable=False,
+        help_text="The total price of all items in the shopping cart"
+    )
+
     def __str__(self):
         """Identifies the object"""
         return f"{self.shopper.username} Shopping Cart"

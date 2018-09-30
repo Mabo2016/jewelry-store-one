@@ -76,10 +76,22 @@ Friday, 28-09-2018, 06:12 - 23:08
         4. The shopping cart is created only by the admin.
         5. Shopping cart creation and item addition functionality are missing.
         6. The problems encountered were due to poor linking with the urlconf.
-Saturday, 29-09-2018, 01:04 - xx:xx
+Saturday, 29-09-2018, 01:04 - 11:59
     01:04 - 06:22
         1. Add to shopping cart functionality done.
         2. Creation of shopping cart for each user upon signup done.
-    21:28 - xx:xx
-        1. Clear the cart of its contents functionality.
-        2. Group items by type, and show quantity, and prices.
+    21:28 - 11:59
+        1. Clear the cart of its contents functionality. Done.
+        2. Group items by type, and show quantity, and prices. Done
+        3. Total price is still not calculated. It seems it cannot be computed
+        within the template tags.
+Sunday, 30-09-2018, 03:00 - xx:xx
+    03:00 - 06:32
+        1. Computation of total price for cart items. Done.
+        2. Make each cart item a link to its jewelry detail. Done.
+        But not the whole table row is a link. The image and title are each
+        links separately.
+        3. Add a link back to the catalog. Done.
+        4. Checkout. Done.
+        5. Show the total price of all of the items in a cart and
+        an order. Done.

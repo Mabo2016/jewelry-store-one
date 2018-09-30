@@ -1,0 +1,51 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>My Order</h1>
+
+    <div style="margin-left:20px;margin-top:20px">
+        <h4>Ordered Items</h4>
+
+        {% if order.orderitem_set.exists %}
+        <table>
+            <theader>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                </tr>
+            </theader>
+            <tbody>
+                {% for orderitem in order.orderitem_set.all %}
+                <tr>
+                    <td>{{ orderitem.count }}</td>
+                    <td>
+                        <a href="{{ orderitem.jewelry_item.get_absolute_url }}">
+                        <img src="{{ orderitem.jewelry_item.thumbnail.url }}"
+                        width="120" height = "80">
+                        </a>
+                    </td>
+                    <td>
+                    <a href="{{ orderitem.jewelry_item.get_absolute_url }}">
+                        {{ orderitem.jewelry_item.title }}
+                    </a>
+                    </td>
+                    <td>{{ orderitem.jewelry_item.price }}</td>
+                    <td>{{ orderitem.total_price }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfooter>
+                <tr>
+                    <th>Total</th>
+                    <td>{{ order.total_price }}</td>
+                </tr>
+            </tfooter>
+        </table>
+        {% else %}
+        <p>There are no ordered items.</p>
+        {% endif %}
+    </div>
+{% endblock %}
